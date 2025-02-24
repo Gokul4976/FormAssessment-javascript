@@ -1,0 +1,90 @@
+.userheading{
+    text-align: center;
+}
+.formdetails{
+    display: grid;
+   align-self: center;
+   justify-self: center;    
+   width: 750px;
+   font-size: 15px;
+   font-family: sans-serif;
+}
+input{
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+.name{
+    display: flex;
+    gap: 30px;
+    padding-top: 10px;
+}
+.contact{
+    display: flex;
+    gap: 30px;
+    padding-top: 10px;
+
+
+}
+.password{
+    display: flex;
+    gap: 30px;
+    padding-top: 10px;
+
+
+}
+.gender{
+    display: flex;
+    gap: 30px;
+    padding-top: 10px;
+
+
+}
+.address{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10px;
+
+
+}
+.pincode{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10px;
+
+
+}
+.state{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10px;
+
+
+}
+.dob{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10px;
+
+
+}
+.languages{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10px;
+
+
+}
+.photo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 10px;
+}
+.photo input{
+    border: none;
+}
+.submitbtn{
+    
+    padding-top: 20px;
+
+}

@@ -1,0 +1,22 @@
+
+.heading{
+    text-align: center;
+}
+.detailstable{
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    padding: 10px;
+}
+table {
+    width: 400px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table tr{
+    margin-top: 10px;
+}
+.picture img{
+    width: 200px;
+    height: 200px;
+}

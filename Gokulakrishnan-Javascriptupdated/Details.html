@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Details.css">
+</head>
+<body>
+    <div class="heading">
+        <h2>All details</h2>
+    </div>
+    <div class="detailstable">
+        <table>
+            <tr>
+                <th>Username</th>
+                <td id="username">name</td>
+            </tr>
+            <tr>
+                <th>email</th>
+                <td id="email">email</td>
+            </tr>
+            <tr>
+                <th>Phone number</th>
+                <td id="Phone">phone</td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td id="Password">Password</td>
+            </tr>
+            <tr>
+                <th>Gender</th>
+                <td id="Gender">Gender</td>
+            </tr>
+            <tr>
+                <th>Current address</th>
+                <td id="address">address</td>
+            </tr>
+            <tr>
+                <th>Date of birth</th>
+                <td id="dob">Date</td>
+            </tr>
+            <tr>
+                <th>Time</th>
+                <td id="time">Time</td>
+            </tr>
+            <tr>
+                <th>Languages</th>
+                <td id="languages">language</td>
+            </tr>
+            <tr>
+                <th>Field of interest</th>
+                <td id="interest">interest</td>
+            </tr>
+            <tr class="picture">
+                <th>picture</th>
+                <td><img  id="picture" src="" alt=""></td>
+            </tr>
+            <tr>
+                <th>resume</th>
+                <td ><a id="resume" href="" target="_blank"></a></td>
+            </tr>
+        </table>
+        <div>
+            <button onclick="back()">Back</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("username").innerText=localStorage.getItem("firstname")
+        document.getElementById("email").innerText=localStorage.getItem("email")
+        document.getElementById("Phone").innerText=localStorage.getItem("phone")
+        document.getElementById("Password").innerText=localStorage.getItem("password")
+        document.getElementById("Gender").innerText=localStorage.getItem("gender")
+        document.getElementById("address").innerText=localStorage.getItem("presentaddress")
+        document.getElementById("dob").innerText=localStorage.getItem("dob")
+        document.getElementById("time").innerText=localStorage.getItem("time")
+        document.getElementById("languages").innerText=localStorage.getItem("languages")
+        document.getElementById("interest").innerText=localStorage.getItem("interest")
+        document.getElementById("picture").src="uploads/"+localStorage.getItem("photo")
+        document.getElementById("resume").href="uploads/"+localStorage.getItem("resume")
+        document.getElementById("resume").innerText=localStorage.getItem("resume")
+
+        function back()
+        {
+            history.back();
+        }
+    </script>
+    
+</body>
+</html>

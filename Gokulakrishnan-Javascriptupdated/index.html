@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="userheading">
+        <h2>User Registration form</h2>
+    </div>
+    <form id="myform">
+        <div class="formdetails">
+            <div class="name">
+                <div>
+
+                    <p>Name: </p>
+                </div>
+                <div>
+                    <input type="text" name="firstname" id="firstname" placeholder="Firstname">
+                    <div>
+
+                        <span style="color: red;" id="firstnameerror"></span>
+                    </div>
+                </div>
+                <div>
+
+                    <input type="text" name="lastname" id="lastname" placeholder="Lastname">
+                    <div>
+
+                        <span style="color: red;" id="lastnameerror"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact">
+
+                <p>Contact: </p>
+                <div>
+
+                    <input type="text" name="email" id="email" placeholder="Email">
+                    <div>
+
+                        <span style="color: red;" id="emailerror"></span>
+                    </div>
+                </div>
+                <div>
+
+                    <input type="text" name="phone" id="phone" placeholder="Phonenumber">
+                    <div>
+
+                        <span style="color: red;" id="phoneerror"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="password">
+
+                <p>Password: </p>
+                <div>
+
+                    <input type="password" name="password" id="password" placeholder="password">
+                    <div>
+
+                        <span style="color: red;" id="passworderror"></span>
+                    </div>
+                </div>
+                <div>
+
+                    <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm password">
+                    <div>
+
+                        <span style="color: red;" id="confirmpassworderror"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="gender">
+                <p>Gender: </p>
+                
+                <div>
+
+                    <span style="color: red;" id="gendererror"></span>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="male" value="male">Male</input>
+                    <input type="radio" name="gender" id="female" value="female">Female
+                    <input type="radio" name="gender" id="others" value="others">Others
+                </div>
+            </div>
+
+            <div class="address">
+                <div>
+
+                    <p>Present address: </p>
+                    <input type="text" placeholder="address" name="presentaddress" id="presentaddress">
+                    <div>
+                        <span  style="color: red;" id="presentaddresserror"></span>
+                    </div>
+                    
+
+                </div>
+                <div>
+                    <p>Permanent address: 
+                    <input type="checkbox"  name="permanentcheckbox" id="permanentcheckbox"> same as present address
+                    </p>
+                    <input type="text" placeholder="address" name="permanentaddress" id="permanentaddress">
+                    <div>
+
+                        <span style="color: red;" id="permanentaddresserror"></span>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="pincode">
+                <div>
+
+                    <p>Pincode: </p>
+                    <input type="text" placeholder="pincode" name="presentpincode" id="presentpincode">
+                    <div>
+
+                        <span style="color: red;" id="presentpincodeerror"></span>
+                    </div>
+
+                </div>
+                <div>
+                    <p>Pincode: </p>
+
+                    <input type="text" placeholder="pincode" name="permanentpincode" id="permanentpincode">
+                    <div>
+
+                        <span style="color: red;" id="permanentpincodeerror"></span>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="state">
+                <div>
+
+                    <p>State: </p>
+                    <select name="presentstate" id="presentstate">
+                        <option value="">Select state</option>
+                        <option value="Tamilnadu">Tamilnadu</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Karnataka">Karnataka</option>
+                    </select>
+                    <div>
+
+                        <span style="color: red;" id="presentstateerror"></span>
+                    </div>
+
+                </div>
+                <div>
+                    <p>State: </p>
+
+                    <select name="permanentstate" id="permanentstate">
+                        <option value="">Select state</option>
+                        <option value="Tamilnadu">Tamilnadu</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Karnataka">Karnataka</option>
+                    </select>
+                    <div>
+
+                        <span style="color: red;" id="permanentstateerror"></span>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="dob">
+                <div>
+                    <p>Date of birth:</p>
+                    <input type="date" name="dob" id="dob">
+                    <div>
+
+                        <span style="color: red;" id="doberror"></span>
+                    </div>
+
+                </div>
+                <div>
+                    <p>Birth time:</p>
+                    <input type="time" name="time" id="time">
+                    <div>
+
+                        <span style="color: red;" id="timeerror"></span>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="languages" id="lang">
+                <div>
+                    <p>Languages</p>
+                    <input type="checkbox" name="languages" id="Tamil" value="Tamil">Tamil
+                    <input type="checkbox" name="languages" id="English" value="English">English
+                    <input type="checkbox" name="languages" id="French" value="French">French
+                    <div>
+
+                        <span style="color: red;" id="languageerror"></span>
+                    </div>
+
+                </div>
+                <div class="interest">
+                    <p>Select your field of interest</p>
+                    <div>
+                        <input type="checkbox" name="interest" id="Music" value="Music">Music
+                        <input type="checkbox" name="interest" id="Singing" value="Singing">Singing
+                        <input type="checkbox" name="interest" id="Dancing" value="Dancing">Dancing
+                        <div>
+
+                            <span style="color: red;" id="interesterror"></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="photo">
+                <div>
+
+                    <p>Upload your photo</p>
+                    <input type="file" name="photo" id="photo">
+                    <div>
+
+                        <span style="color: red;" id="photoerror"></span>
+                    </div>
+
+                </div>
+                <div class="resume">
+                    <p>Upload your resume: </p>
+                    <input type="file" name="resume" id="resume" accept="application/pdf">
+                    <div>
+
+                        <span style="color: red;" id="resumeerror"></span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="submitbtn">
+                <!-- <input type="submit" name="submit" id="submit"> -->
+                <button type="submit" id="submit">submit</button>
+                <button type="reset" id="reset">Reset</button>
+                <!-- <input type="reset" name="reset" id="reset">/ -->
+            </div>
+
+        </div>
+    </form>
+    <script src="script1.js"></script>
+</body>
+
+</html>
